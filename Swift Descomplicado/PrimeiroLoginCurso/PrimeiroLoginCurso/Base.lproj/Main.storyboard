@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PrimeiroLoginCurso" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seja Bem-Vindo!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEX-8F-4qO">
+                                <rect key="frame" x="20" y="109" width="353" height="52"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scribble.variable" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="pdv-Lg-fHN">
+                                <rect key="frame" x="20" y="175.66666666666663" width="353" height="139.33333333333337"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="fbk-Qc-nG6"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jdu-Tv-h7z">
+                                <rect key="frame" x="25" y="336" width="348" height="23"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite aqui seu e-mail:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iex-B8-M5R">
+                                <rect key="frame" x="25" y="367" width="343" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Senha:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18b-KR-VbK">
+                                <rect key="frame" x="25" y="421" width="348" height="23"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite aqui sua senha:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KO9-vA-hLZ">
+                                <rect key="frame" x="25" y="452" width="343" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iex-B8-M5R" secondAttribute="trailing" constant="25" id="3bI-HW-sTW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pdv-Lg-fHN" secondAttribute="trailing" constant="20" id="72Z-JF-9ua"/>
+                            <constraint firstItem="18b-KR-VbK" firstAttribute="top" secondItem="iex-B8-M5R" secondAttribute="bottom" constant="20" id="7bj-fr-rn3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jdu-Tv-h7z" secondAttribute="trailing" constant="20" id="8nW-D4-MPO"/>
+                            <constraint firstItem="VEX-8F-4qO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="CR1-dr-gLs"/>
+                            <constraint firstItem="iex-B8-M5R" firstAttribute="top" secondItem="Jdu-Tv-h7z" secondAttribute="bottom" constant="8" symbolic="YES" id="LxX-CV-JAw"/>
+                            <constraint firstItem="KO9-vA-hLZ" firstAttribute="trailing" secondItem="iex-B8-M5R" secondAttribute="trailing" id="MBl-nW-iZb"/>
+                            <constraint firstItem="pdv-Lg-fHN" firstAttribute="top" secondItem="VEX-8F-4qO" secondAttribute="bottom" constant="15" id="PAg-sc-IXB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VEX-8F-4qO" secondAttribute="trailing" constant="20" id="VEH-zd-4LZ"/>
+                            <constraint firstItem="18b-KR-VbK" firstAttribute="leading" secondItem="Jdu-Tv-h7z" secondAttribute="leading" id="ZI4-oG-BOt"/>
+                            <constraint firstItem="KO9-vA-hLZ" firstAttribute="top" secondItem="18b-KR-VbK" secondAttribute="bottom" constant="8" symbolic="YES" id="bRf-C4-kQN"/>
+                            <constraint firstItem="18b-KR-VbK" firstAttribute="trailing" secondItem="Jdu-Tv-h7z" secondAttribute="trailing" id="boi-yq-RpB"/>
+                            <constraint firstItem="Jdu-Tv-h7z" firstAttribute="top" secondItem="pdv-Lg-fHN" secondAttribute="bottom" constant="20" id="jdd-sx-cte"/>
+                            <constraint firstItem="VEX-8F-4qO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="k5d-qY-Qvs"/>
+                            <constraint firstItem="Jdu-Tv-h7z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="mUc-dR-Jdd"/>
+                            <constraint firstItem="KO9-vA-hLZ" firstAttribute="leading" secondItem="iex-B8-M5R" secondAttribute="leading" id="tnH-7V-euz"/>
+                            <constraint firstItem="iex-B8-M5R" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="xmq-Ye-50b"/>
+                            <constraint firstItem="pdv-Lg-fHN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="yLa-6a-0o5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113.74045801526717" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="scribble.variable" catalog="system" width="128" height="119"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
